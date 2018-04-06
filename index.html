@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Political representative componanent -->
+   <article id="rep">
+       <!-- Basic canidate info component -->
+       <section id="basicInfo">
+           <!-- Canidate image component -->
+           <img src="https://www.govtrack.us/data/photos/400081-100px.jpeg">
+           <!-- Canidate name -->
+           <h3>Jim Cooper</h3>
+           <!-- District info -->
+           <p>Representative Tennessee's 5th congressional district</p>
+           <!-- Political affiliation -->
+           <p>Democrat</p>
+       </section>
+       <section id="committees">
+           <!-- Committees representative is a part of -->
+           <h4>Committees</h4>
+           <ul>
+               <li>House Committee on Armed Services</li>
+               <li>Ranking Member, Subcommittee on Strategic Forces</li>
+               <li>Member, Subcommittee on Emerging Threats and Capabilities</li>
+               <li>Member, Subcommittee on Tactical Air and Land Forces</li>
+               <li>House Committee on Oversight and Government Reform</li>
+               <li>Member, Subcommittee on Healthcare, Benefits, and Administrative Rules</li>
+           </ul>
+       </section>
+       <section id="links">
+           <!-- Legislation that representative has Enacted -->
+           <h4>Legislation Enacted</h4>
+           <ol>
+               <li>
+                <a href="https://www.govtrack.us/congress/bills/110/hr928">H.R. 928 (110th): Inspector General Reform Act of 2008</a>
+               </li>
+               <li>
+                <a href="https://www.govtrack.us/congress/bills/103/hjres297">H.J.Res. 297 (103rd): To designate 1994 as “The Year of Gospel Music”.</a>
+               </li>
+               <li>
+                <a href="https://www.govtrack.us/congress/bills/101/hr5667">H.R. 5667 (101st): To amend the Water Resources Development Act of 1974</a>
+               </li>
+               <li>
+                <a href="https://www.govtrack.us/congress/bills/101/hr971">H.R. 971 (101st): Telephone Operator Consumer Services Improvement Act of 1990</a>
+               </li>
+           </ol>
+       </section>
+   </article>
+   <script>
+       var node = document.createElement("H1");
+       var textnode = document.createTextNode("Motto: Making TN greeeeaaaat like Tony the Tiger!");
+       node.appendChild(textnode);
+       document.querySelector("#rep").prepend(node);
+       document.querySelector("#rep").setAttribute("congressional-district", "5");
+   </script>
+</body>
+</html>
